@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+
+  <filter>
+   <filter-name>user</filter-name>
+   <filter-class>com.user</filter-class>
+   <init-param>
+            <param-name>ROLE</param-name>
+            <param-value>admin</param-value>
+   </init-param>
+  </filter>
+
+<filter-mapping>
+     <filter-name>user</filter-name>
+     <url-pattern>/student.jsp</url-pattern>
+</filter-mapping>
+
+</web-app>
